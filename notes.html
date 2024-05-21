@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="cjlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title> Notes </title>
+</head>
+<body>
+
+ <article>
+    <p>
+    Lägga till icon library för social media buttons (https://www.w3schools.com/howto/howto_css_social_media_buttons.asp)
+
+    <br><br>
+    _______________________________ <br><br>
+    Motivering till flera css sidor:<br><br>
+
+    Anledningen till varför jag har valt att använda flera css sidor istället för ett enda styleshett är först och
+    främst för att enkelt kunna skilja på css som enbart ska appliceras på olika sidor. Genom att ha olika css filer 
+    för olika html dokument så kan jag använda samma grupper och redigera css-koden så att den passar den specifika
+    sidan och inte appliceras på alla sidor samtidigt. Det anser jag är mycket enklare än att hålla på med flertalet
+    olika klasser och man kan då även lägga till enskild css på sidorna kopplade till html-filerna för att undvika 
+    redundans i style.css där koden då enbart gäller för en html-fil och inte ska användas till någon annan. <br><br>
+
+    På så vis medför uppdelandet även att jag kan hålla koll på kod som används utöver alla sidor, och det jag ändrar
+    från sida till sida. <br><br>
+
+    Till sist, finns det inga instruktioner om att enbart en css fil var tillåten, och med min dåvarande kunskap ansåg
+    jag att det var mycket enklare att dela upp det med extra css filer till html filerna. <br><br>
+
+    Dock blir det även svårare att hålla koll på alla filer och vart man gjort ändringar som påverkar olika sidor,
+    vilket är en nackdel med min metod. <br><br>
+    _______________________________<br><br>
+
+    Problem som jag har stött på under kodning av hemsidan:<br><br>
+
+    1. Att strukturera navbaren så att länkarna var separerade från loggan och jämna avstånd. Det tog lång tid att lösa
+    men fungerade till slut med flexbox-strukturen och gemensamma element för loggan och navbaren.<br><br>
+
+    2. Att använda fast positionering i kombination med flex-element för att få avstånd rätt.
+    Exempelvis låg footer i början efter div-elementen i vanlig ordning samt rubriker under navbaren, men med hjälp
+    av z-layers och fast positionering lyckades jag att fixa detta. <br><br>
+
+    3. Funktioner inom Javascript som öppnar länkarna och väntar tills animationer har skett. Samt dessa i css och 
+    att de ska hända under en viss tidsperiod. Till slut lärde jag mig hur de fungerar och lyckades implementera dessa
+    i min html kod för att klick skulle starta funktioner som gör att sidan fadear ut etc. <br><br>
+
+    4. Att lägga till och ta bort klasser för att få understrykningen att fungera då man hovrar med musen över länkarna. 
+    Lärde jag mig via w3schools och använde detta för att få animationerna att fungera. <br><br>
+
+    5. Storleken på navbaren och hur den kopplas till att den försvinner när man skrollar ner på sidan. Kollade höjden
+    på elementet samt texterna och kunde därifrån räkna ut mur mycket man behövde minska avståndet top: -88px; för att
+    hela navbaren skulle försvinna.<br><br>
+
+    6.!!!!!!!!!!!!!!!!!!! Att få "Top" knappen att fungera samt speciellt att fadea ut när man 
+    skrollar upp på sidan eller klickar på knappen. Dessutom att få den att fadea in men det var relativt enkelt. <br><br>
+
+    7. Att få navbaren till att fungera som den skall över hela sidan "Webbutveckling" då jag var tvugen att 
+    ändra från position fixed, till sticky beroende på vart man befinner sig på hemsidan för att den inte ska 
+    hindras av element på sidan. <br><br>
+
+    _______________________________ <br><br>
+    Alla flexbox tekniker som krävs för E och C är med, även de funktioner som ska täcka för A nivå. Jag har
+    exempelvis med justify content, flex-direction, space-around och space-between, flex-shrink, align-items m.m. <br><br>
+
+    Nu har dessutom en extra utbyggnad lagts till, vilket är dropdown menyn. Den kan man se om man hovrar över knappen "Om",
+    och har vid tillfället inga länkar eftersom att jag inte har flera sidor på hemsidan, men finns där för att jag ska
+    kunna visa på mina kunskaper. 
+
+    </p>
+</article>
+
+</body>

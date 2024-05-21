@@ -1,0 +1,9 @@
+.Header a {
+    transition: color 0.2s ease-in-out;
+}
+
+.Header a:hover {
+    color: #5b66a3;
+    transform: scale(1.05)
+  }
+  

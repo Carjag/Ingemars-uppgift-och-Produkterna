@@ -1,0 +1,77 @@
+Header {
+    position: sticky;
+    width: 90vw;
+}
+
+.Header p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+
+.container {
+    justify-content: flex-start;
+}
+ /* artiklarna med information */
+article {
+    text-align: start;
+    box-shadow: 0 0 40px #DAE5F4;
+    border-radius: 30px;
+    margin: 20px 20px 20px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    article h1 {
+        font-family: 'raleway', sans-serif;
+        color: #7F8CD9;
+    }
+
+    article p {
+        font-family: 'Roboto mono', monospace;
+    }
+    .bottomarticle {
+        margin-bottom: 40px;
+        padding-bottom: 70px;
+    }
+
+.linkcontainer {
+    display: flex;
+    justify-content: space-around;
+    width: 80vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/* för länkarna som används för att skrolla ner */
+.item-year {
+    background-color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'raleway', sans-serif;
+    color: #7F8CD9;
+    border: solid 5px white;
+    box-shadow: 0 0 50px #DAE5F4;
+    border-radius: 30px;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+}
+ 
+    .item-year:hover {
+        transform: scale(1.03);
+        box-shadow: 0 0 40px #c6d3e5;
+        cursor: pointer;
+        color: #5b66a3;
+    }
+    
+    .item-year:active {
+        box-shadow: 0 0 40px #c6d3e5;
+        cursor: pointer;
+        color: #5b66a3;
+        transform: scale(0.97);
+    }
+
+strong {
+    font-family: 'raleway', sans-serif;
+    color: #7F8CD9;
+    font-size: x-large;
+}

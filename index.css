@@ -1,0 +1,79 @@
+
+.Header p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.circles {
+  padding: 20px;
+  font-size: larger;
+  color: #7F8CD9;
+}
+
+#circle1, #circle2, #circle3 {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+}
+/* Animationer för circklarna */
+#circle1 {
+  animation: wave1 2s infinite;
+} 
+
+@keyframes wave1 {
+
+  0% {
+    bottom: -100px;
+    color: transparent;
+  }
+  50% {
+    bottom: 0;
+    color: #7F8CD9;
+  }
+  100% {
+    bottom: -100px;
+    color: transparent;
+  }
+}
+
+#circle2 {
+  animation: wave1 2s 0.3s infinite;
+} 
+
+@keyframes wave1 {
+
+  0% {
+    bottom: -100px;
+    color: transparent;
+  }
+  50% {
+    bottom: 0;
+    color: #7F8CD9;
+  }
+  100% {
+    bottom: -100px;
+    color: transparent;
+  }
+}
+
+#circle3 {
+  animation: wave1 2s 0.6s infinite;
+} 
+
+@keyframes wave1 {
+
+  0% {
+    bottom: -100px;
+    color: transparent;
+  }
+  50% {
+    bottom: 0;
+    color: #7F8CD9;
+  }
+  100% {
+    bottom: -100px;
+    color: transparent;
+  }
+}
+
+

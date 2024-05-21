@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="cjlogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title> Om </title>
+</head>
+<body>
+    <div class="body">
+        <header id="navbar">
+            <div class="img">
+                <img src="cjlogo.png" class="cjlogo" alt="CJ logo">
+            </div>
+                <ul>
+                    <li><a id="inactiveIndex" onclick="Index()">Hem</a></li>
+                    <li><a id="inactiveWeb" onclick="Webhistory()">Webbhistoria</a></li>
+                    <li><a id="inactiveContact" onclick="Contact()">Kontakt</a></li>
+                    <li class="dropbtn">
+                        <a id="active" class="active" onclick="About()">Om</a>
+                        <div class="dropdown-content">
+                            <p> Dropdown test </p>
+                        </div>
+                    </li>
+                </ul>
+        </header>
+        <div class="container">
+            <div class="Header">
+                <p> Om kursen webbutveckling </p>
+            </div>
+            <article>
+                <h1> Ämne </h1>
+                <p> Ämnet webbutveckling behandlar de tekniker som används för att 
+                    presentera och bearbeta information i webbläsaren samt utifrån dessa 
+                    tekniker skapa och vidareutveckla statiska och dynamiska webbsidor, 
+                    webbplatser eller webbapplikationer.
+                </p>
+            </article>
+            <article>
+                <h1> Syfte </h1>
+                <p> Elever i webbutveckling lär sig skapa produkter med olika webbtekniker 
+                    och förstå deras funktion. De ska kunna samarbeta och följa standarder 
+                    för användbarhet och tillgänglighet. Undervisningen inkluderar också lagkunskap, 
+                    etik och kodningsverktyg. Projektarbete är en del av kursen.
+                </p>
+            </article>
+        </div>
+        <a onclick="topFunction()" id="topbtn"> Top </a>
+        <footer>
+            <p> Carl J </p>
+            <p> Ingemars uppgift / Produkterna </p>
+        </footer>
+    </div>
+</body>
+<script src="scroll.js"></script>
+<script>
+// ------------------------------------------- funktioner för varje enskild länk! -----------------------------------------------------------
+//------------------------------ Webbhistoria
+function Webhistory(){
+
+    const element = document.querySelector('.container');
+    element.classList.add('animation'); // Sätter klassen animation till elementet
+
+    var element2 = document.getElementById("active");
+        element2.classList.remove("active");
+
+    var element3 = document.getElementById("inactiveWeb")
+        element3.classList.add("active")
+
+    setTimeout(() =>{
+        location.assign('webhistory.html')
+    } , 300) // dröjer processen av  navigationen i 3s (3000ms)
+}
+//------------------------------ Kontakt
+function Contact() {
+    const element = document.querySelector('.container');
+    element.classList.add('animation'); // Sätter klassen animation till elementet
+
+    var element2 = document.getElementById("active");
+        element2.classList.remove("active");
+
+    var element3 = document.getElementById("inactiveContact")
+        element3.classList.add("active")
+
+    setTimeout(() =>{
+        location.assign('contact.html')
+    } , 300) // dröjer processen av  navigationen i 3s (3000ms)
+}
+//------------------------------- Om
+function About() {
+    const element = document.querySelector('.container');
+    element.classList.add('animation'); // Sätter klassen animation till elementet
+
+    setTimeout(() =>{
+        location.assign('about.html')
+    } , 300) // dröjer processen av  navigationen i 3s (3000ms)
+}
+// -------------------------------- Hem
+function Index() {
+    const element = document.querySelector('.container');
+    element.classList.add('animation'); // Sätter klassen animation till elementet
+
+    var element2 = document.getElementById("active");
+        element2.classList.remove("active");
+
+    var element3 = document.getElementById("inactiveIndex")
+        element3.classList.add("active")
+
+    setTimeout(() =>{
+        location.assign('index.html')
+    } , 300) // dröjer processen av  navigationen i 3s (3000ms)
+}
+//----------------------------------------------------------------------------------------------------------------
+</script>
+</html>
